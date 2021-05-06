@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ /* import the bootstrap library */
+ @import "bootstrap"
+
+ /* import other css files below. */
+
+ body{
+
+   background-color:red;
+ }
