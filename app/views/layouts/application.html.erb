@@ -1,672 +1,507 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="pingback" href="https://www.corinthiancap.com/xmlrpc.php"/>
-
-    <script type="text/javascript">
-    document.documentElement.className = 'js';
-    </script>
-
-    <script>
-    var et_site_url = 'https://www.corinthiancap.com';
-    var et_post_id = '32';
-    function et_core_page_resource_fallback(a, b) {
-        "undefined" === typeof b && (b = a.sheet.cssRules && 0 === a.sheet.cssRules.length);
-        b && (a.onerror = null, a.onload = null, a.href ? a.href = et_site_url + "/?et_core_page_resource=" + a.id + et_post_id : a.src && (a.src = et_site_url + "/?et_core_page_resource=" + a.id + et_post_id))
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Christopher Leiva Real Estate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
     }
-    </script>
-    <title>Corinthian Capital Group, LLC – a middle-market private equity firm | Corinthian Capital Group LLC</title>
-    <meta name='robots' content='max-image-preview:large'/>
-    <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
-    <link rel='dns-prefetch' href='//s.w.org'/>
-    <link rel="alternate" type="application/rss+xml" title="Corinthian Capital Group, LLC – a middle-market private equity firm &raquo; Feed" href="https://www.corinthiancap.com/feed/"/>
-    <link rel="alternate" type="application/rss+xml" title="Corinthian Capital Group, LLC – a middle-market private equity firm &raquo; Comments Feed" href="https://www.corinthiancap.com/comments/feed/"/>
-    <link rel='preconnect' href='https://secureservercdn.net' crossorigin/>
-    <script type="text/javascript">
-    window._wpemojiSettings = {
-        "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/",
-        "ext": ".png",
-        "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/",
-        "svgExt": ".svg",
-        "source": {
-            "concatemoji": "https:\/\/secureservercdn.net\/166.62.108.196\/xbn.224.myftpupload.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.1&time=1620275929"
-        }
-    };
-    !function(e, a, t) {
-        var n,
-            r,
-            o,
-            i = a.createElement("canvas"),
-            p = i.getContext && i.getContext("2d");
-        function s(e, t) {
-            var a = String.fromCharCode;
-            p.clearRect(0, 0, i.width, i.height),
-            p.fillText(a.apply(this, e), 0, 0);
-            e = i.toDataURL();
-            return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
-        }
-        function c(e) {
-            var t = a.createElement("script");
-            t.src = e,
-            t.defer = t.type = "text/javascript",
-            a.getElementsByTagName("head")[0].appendChild(t)
-        }
-        for (o = Array("flag", "emoji"), t.supports = {
-            everything: !0,
-            everythingExceptFlag: !0
-        }, r = 0; r < o.length; r++)
-            t.supports[o[r]] = function(e) {
-                if (!p || !p.fillText)
-                    return !1;
-                switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
-                case "flag":
-                    return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
-                case "emoji":
-                    return !s([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212])
-                }
-                return !1
-            }(o[r]),
-            t.supports.everything = t.supports.everything && t.supports[o[r]],
-            "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
-        t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag,
-        t.DOMReady = !1,
-        t.readyCallback = function() {
-            t.DOMReady = !0
-        },
-        t.supports.everything || (n = function() {
-            t.readyCallback()
-        }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
-            "complete" === a.readyState && t.readyCallback()
-        })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
-    }(window, document, window._wpemojiSettings);
-    </script>
-    <meta content="Corinthian v.1.0" name="generator"/>
-    <style type="text/css">
-    img.wp-smiley, img.emoji {
-        display: inline !important;
-        border: none !important;
-        box-shadow: none !important;
-        height: 1em !important;
-        width: 1em !important;
-        margin: 0 .07em !important;
-        vertical-align: -0.1em !important;
-        background: none !important;
-        padding: 0 !important;
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
     }
-    </style>
-    <link rel='stylesheet' id='wp-block-library-css' href='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-includes/css/dist/block-library/style.min.css?ver=5.7.1&#038;time=1620275929' type='text/css' media='all'/>
-    <link rel='stylesheet' id='et_monarch-css-css' href='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/plugins/monarch/css/style.css?ver=1.4.14&#038;time=1620275929' type='text/css' media='all'/>
-    <link rel='stylesheet' id='et-gf-open-sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' type='text/css' media='all'/>
-    <link rel='stylesheet' id='parent-style-css' href='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/themes/Divi/style.css?ver=5.7.1&#038;time=1620275929' type='text/css' media='all'/>
-    <link rel='stylesheet' id='divi-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap' type='text/css' media='all'/>
-    <link rel='stylesheet' id='divi-style-css' href='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/themes/corinthian/style.css?ver=4.9.4&#038;time=1620275929' type='text/css' media='all'/>
-    <link rel='stylesheet' id='et-builder-googlefonts-cached-css' href='https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;subset=latin,latin-ext&#038;display=swap' type='text/css' media='all'/>
-    <link rel='stylesheet' id='dashicons-css' href='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-includes/css/dashicons.min.css?ver=5.7.1&#038;time=1620275929' type='text/css' media='all'/>
-    <script type='text/javascript' src='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1&#038;time=1620275929' id='jquery-core-js'></script>
-    <script type='text/javascript' src='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2&#038;time=1620275929' id='jquery-migrate-js'></script>
-    <link rel="https://api.w.org/" href="https://www.corinthiancap.com/wp-json/"/>
-    <link rel="alternate" type="application/json" href="https://www.corinthiancap.com/wp-json/wp/v2/pages/32"/>
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.corinthiancap.com/xmlrpc.php?rsd"/>
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-includes/wlwmanifest.xml?time=1620275929"/>
-    <meta name="generator" content="WordPress 5.7.1"/>
-    <link rel="canonical" href="https://www.corinthiancap.com/"/>
-    <link rel='shortlink' href='https://www.corinthiancap.com/'/>
-    <link rel="alternate" type="application/json+oembed" href="https://www.corinthiancap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.corinthiancap.com%2F"/>
-    <link rel="alternate" type="text/xml+oembed" href="https://www.corinthiancap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.corinthiancap.com%2F&#038;format=xml"/>
-    <style type="text/css" id="et-social-custom-css">
-    </style>
-    <link rel="preload" href="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/themes/Divi/core/admin/fonts/modules.ttf" as="font" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <link rel="icon" href="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2020/04/cropped-Logo_webtab-32x32.png" sizes="32x32"/>
-    <link rel="icon" href="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2020/04/cropped-Logo_webtab-192x192.png" sizes="192x192"/>
-    <link rel="apple-touch-icon" href="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2020/04/cropped-Logo_webtab-180x180.png"/>
-    <meta name="msapplication-TileImage" content="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2020/04/cropped-Logo_webtab-270x270.png"/>
-    <link rel="stylesheet" id="et-core-unified-32-cached-inline-styles" href="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/et-cache/32/et-core-unified-32-1619978256321.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)"/>
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
 </head>
-<body class="home page-template-default page page-id-32 et_monarch et_pb_button_helper_class et_fullwidth_nav et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_split et_pb_footer_columns4 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css">
-    <div id="page-container">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-        <header id="main-header" data-height-onload="139">
-            <div class="container clearfix et_menu_container">
-                <div class="logo_container">
-                    <span class="logo_helper"></span>
-                    <a href="https://www.corinthiancap.com/">
-                        <img src="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/03/Logo1-01.jpg" alt="Corinthian Capital Group, LLC – a middle-market private equity firm" id="logo" data-height-percentage="98"/>
-                    </a>
-                </div>
-                <div id="et-top-navigation" data-height="139" data-fixed-height="71">
-                    <nav id="top-menu-nav">
-                        <ul id="top-menu" class="nav">
-                            <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-32 current_page_item menu-item-37">
-                                <a href="https://www.corinthiancap.com/" aria-current="page">Home</a>
-                            </li>
-                            <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140">
-                                <a href="https://www.corinthiancap.com/about/">About</a>
-                            </li>
-                            <li id="menu-item-1341" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1341">
-                                <a href="#">For You</a>
-                                <ul class="sub-menu">
-                                    <li id="menu-item-279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-279">
-                                        <a href="https://www.corinthiancap.com/business-owners/">Business Owners</a>
-                                    </li>
-                                    <li id="menu-item-282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-282">
-                                        <a href="https://www.corinthiancap.com/management/">Management</a>
-                                    </li>
-                                    <li id="menu-item-280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-280">
-                                        <a href="https://www.corinthiancap.com/intermediaries/">Intermediaries</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li id="menu-item-283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-283">
-                                <a href="https://www.corinthiancap.com/corinthian_perspective/">Our Perspective</a>
-                                <ul class="sub-menu">
-                                    <li id="menu-item-285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285">
-                                        <a href="https://www.corinthiancap.com/industry_viewpoints/">Industry Viewpoints</a>
-                                    </li>
-                                    <li id="menu-item-286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-286">
-                                        <a href="https://www.corinthiancap.com/investment_criteria/">Investment Criteria</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li id="menu-item-1992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1992">
-                                <a href="https://www.corinthiancap.com/all-investment/">Portfolio</a>
-                                <ul class="sub-menu">
-                                    <li id="menu-item-1991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1991">
-                                        <a href="https://www.corinthiancap.com/all-investment/">All Investments</a>
-                                    </li>
-                                    <li id="menu-item-1319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1319">
-                                        <a href="https://www.corinthiancap.com/cef1/">CEF I</a>
-                                    </li>
-                                    <li id="menu-item-1333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1333">
-                                        <a href="https://www.corinthiancap.com/cef2/">CEF II</a>
-                                    </li>
-                                    <li id="menu-item-1318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1318">
-                                        <a href="https://www.corinthiancap.com/current-investment/">Current Investments</a>
-                                    </li>
-                                    <li id="menu-item-1317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1317">
-                                        <a href="https://www.corinthiancap.com/prior-investment/">Prior Investments</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-297">
-                                <a href="https://www.corinthiancap.com/team/">Team</a>
-                            </li>
-                            <li id="menu-item-1962" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1962">
-                                <a href="https://www.corinthiancap.com/news/">News</a>
-                            </li>
-                            <li id="menu-item-1093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1093">
-                                <a href="https://www.corinthiancap.com/contact-us/">Contact Us</a>
-                            </li>
-                            <li id="menu-item-1342" class="btn-login menu-item menu-item-type-custom menu-item-object-custom menu-item-1342">
-                                <a href="https://corinthiancap.altareturn.com/">Investor Login</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div id="et_top_search">
-                        <span id="et_search_icon"></span>
-                    </div>
-
-                    <div id="et_mobile_nav_menu">
-                        <div class="mobile_nav closed">
-                            <span class="select_page">Select Page</span>
-                            <span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
-                        </div>
-                    </div>
-                </div>
-                <!-- #et-top-navigation -->
-            </div>
-            <!-- .container -->
-            <div class="et_search_outer">
-                <div class="container et_search_form_container">
-                    <form role="search" method="get" class="et-search-form" action="https://www.corinthiancap.com/">
-                        <input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:"/>
-                    </form>
-                    <span class="et_close_search_field"></span>
-                </div>
-            </div>
-        </header>
-        <!-- #main-header -->
-        <div id="et-main-area">
-
-            <div id="main-content">
-
-                <article id="post-32" class="post-32 page type-page status-publish hentry">
-
-                    <div class="entry-content">
-                        <div id="et-boc" class="et-boc">
-
-                            <div class="et-l et-l--post">
-                                <div class="et_builder_inner_content et_pb_gutters3">
-                                    <div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider">
-
-                                        <div class="et_pb_row et_pb_row_0 et_pb_row_fullwidth">
-                                            <div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
-
-                                                <div class="et_pb_module et_pb_slider et_pb_slider_0 et_pb_slider_fullwidth_off et_pb_slider_no_arrows et_pb_slider_no_pagination et_slider_auto et_slider_speed_7000 et_slider_auto_ignore_hover">
-                                                    <div class="et_pb_slides">
-                                                        <div class="et_pb_slide et_pb_slide_0 et_pb_bg_layout_dark et_pb_media_alignment_center et-pb-active-slide" data-slide-id="et_pb_slide_0">
-
-                                                            <div class="et_pb_container clearfix">
-                                                                <div class="et_pb_slider_container_inner">
-
-                                                                    <div class="et_pb_slide_description">
-                                                                        <div class="et_pb_slide_content"> We believe that the best opportunities for building equity value continue to occur in the North American small and middle market.</div>
-
-                                                                    </div>
-                                                                    <!-- .et_pb_slide_description -->
-                                                                </div>
-                                                            </div>
-                                                            <!-- .et_pb_container -->
-
-                                                        </div>
-                                                        <!-- .et_pb_slide -->
-                                                        <div class="et_pb_slide et_pb_slide_1 et_pb_bg_layout_dark et_pb_media_alignment_center" data-slide-id="et_pb_slide_1">
-
-                                                            <div class="et_pb_container clearfix">
-                                                                <div class="et_pb_slider_container_inner">
-
-                                                                    <div class="et_pb_slide_description">
-                                                                        <h2 class="et_pb_slide_title"></h2>
-                                                                        <div class="et_pb_slide_content">
-                                                                            <p>We take the time to evaluate the unique intrinsic value of each company and to identify a firm&#8217;s individual strength.</p>
-                                                                        </div>
-
-                                                                    </div>
-                                                                    <!-- .et_pb_slide_description -->
-                                                                </div>
-                                                            </div>
-                                                            <!-- .et_pb_container -->
-
-                                                        </div>
-                                                        <!-- .et_pb_slide -->
-
-                                                    </div>
-                                                    <!-- .et_pb_slides -->
-
-                                                </div>
-                                                <!-- .et_pb_slider -->
-
-                                            </div>
-                                            <!-- .et_pb_column -->
-
-                                        </div>
-                                        <!-- .et_pb_row -->
-
-                                        <div class="et_pb_bottom_inside_divider et-no-transition"></div>
-                                    </div>
-                                    <!-- .et_pb_section -->
-                                    <div class="et_pb_section et_pb_section_1 et_pb_with_background et_section_regular">
-
-                                        <div class="et_pb_row et_pb_row_1">
-                                            <div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
-
-                                                <div class="et_pb_module et_pb_text et_pb_text_0 et_animated  et_pb_text_align_center et_pb_bg_layout_light">
-
-                                                    <div class="et_pb_text_inner">
-                                                        Our Services
-                                                        <br/>
-                                                        <img src="/wp-content/uploads/2019/02/team_bg.jpg" style="position:absolute; left:-100000px;"/>
-                                                    </div>
-                                                </div>
-                                                <!-- .et_pb_text -->
-                                                <div class="et_pb_module et_pb_divider_0 et_animated et_pb_space et_pb_divider_hidden">
-                                                    <div class="et_pb_divider_internal"></div>
-                                                </div>
-                                            </div>
-                                            <!-- .et_pb_column -->
-
-                                        </div>
-                                        <!-- .et_pb_row -->
-                                        <div class="et_pb_row et_pb_row_2">
-                                            <div class="et_pb_column et_pb_column_1_3 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
-
-                                                <div class="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_0 et_animated et_clickable  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
-
-                                                    <div class="et_pb_blurb_content">
-                                                        <div class="et_pb_main_blurb_image">
-                                                            <span class="et_pb_image_wrap">
-                                                                <img loading="lazy" width="1280" height="720" src="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Investment-Criteria.jpg" alt="" srcset="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Investment-Criteria.jpg 1280w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Investment-Criteria-300x169.jpg 300w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Investment-Criteria-768x432.jpg 768w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Investment-Criteria-1024x576.jpg 1024w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Investment-Criteria-1080x608.jpg 1080w" sizes="(max-width: 1280px) 100vw, 1280px" class="et-waypoint et_pb_animation_top wp-image-1352"/>
-                                                            </span>
-                                                        </div>
-                                                        <div class="et_pb_blurb_container">
-                                                            <h4 class="et_pb_module_header">
-                                                                <span>Investment Criteria</span>
-                                                            </h4>
-                                                            <div class="et_pb_blurb_description">
-                                                                <p>
-                                                                    We invest in companies with a demonstrated history of&#8230;
-                                                                    <br/>
-                                                                    <span style="color: #1071b9;">
-                                                                        <a href="/investment_criteria" style="color: #1071b9;">read more</a>
-                                                                    </span>
-                                                                </p>
-                                                                <p>&nbsp;</p>
-                                                                <p>&nbsp;</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- .et_pb_blurb_content -->
-                                                </div>
-                                                <!-- .et_pb_blurb -->
-                                            </div>
-                                            <!-- .et_pb_column -->
-                                            <div class="et_pb_column et_pb_column_1_3 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
-
-                                                <div class="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_1 et_animated et_clickable  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
-
-                                                    <div class="et_pb_blurb_content">
-                                                        <div class="et_pb_main_blurb_image">
-                                                            <span class="et_pb_image_wrap">
-                                                                <img loading="lazy" width="1280" height="720" src="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Who-We-Are.jpg" alt="" srcset="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Who-We-Are.jpg 1280w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Who-We-Are-300x169.jpg 300w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Who-We-Are-768x432.jpg 768w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Who-We-Are-1024x576.jpg 1024w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Who-We-Are-1080x608.jpg 1080w" sizes="(max-width: 1280px) 100vw, 1280px" class="et-waypoint et_pb_animation_top wp-image-1353"/>
-                                                            </span>
-                                                        </div>
-                                                        <div class="et_pb_blurb_container">
-                                                            <h4 class="et_pb_module_header">
-                                                                <span>Who We Are</span>
-                                                            </h4>
-                                                            <div class="et_pb_blurb_description">
-                                                                <p>
-                                                                    Founder-owned and operated investment firm with an average of 20 years working together&#8230;
-                                                                    <br/>
-                                                                    <span style="color: #1071b9;">
-                                                                        <a href="/about" style="color: #1071b9;">read more</a>
-                                                                    </span>
-                                                                </p>
-                                                                <p>&nbsp;</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- .et_pb_blurb_content -->
-                                                </div>
-                                                <!-- .et_pb_blurb -->
-                                            </div>
-                                            <!-- .et_pb_column -->
-                                            <div class="et_pb_column et_pb_column_1_3 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
-
-                                                <div class="et_pb_with_border et_pb_module et_pb_blurb et_pb_blurb_2 et_animated et_clickable  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_light">
-
-                                                    <div class="et_pb_blurb_content">
-                                                        <div class="et_pb_main_blurb_image">
-                                                            <span class="et_pb_image_wrap">
-                                                                <img loading="lazy" width="1280" height="720" src="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Portfolio-Add-logo.jpg" alt="" srcset="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Portfolio-Add-logo.jpg 1280w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Portfolio-Add-logo-300x169.jpg 300w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Portfolio-Add-logo-768x432.jpg 768w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Portfolio-Add-logo-1024x576.jpg 1024w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/04/Home-Portfolio-Add-logo-1080x608.jpg 1080w" sizes="(max-width: 1280px) 100vw, 1280px" class="et-waypoint et_pb_animation_top wp-image-1354"/>
-                                                            </span>
-                                                        </div>
-                                                        <div class="et_pb_blurb_container">
-                                                            <h4 class="et_pb_module_header">
-                                                                <span>Portfolio</span>
-                                                            </h4>
-                                                            <div class="et_pb_blurb_description">
-                                                                <p>
-                                                                    We build stronger companies alongside management…
-                                                                    <br/>
-                                                                    <span style="color: #1071b9;">
-                                                                        <a href="/portfolio" style="color: #1071b9;">read more</a>
-                                                                    </span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- .et_pb_blurb_content -->
-                                                </div>
-                                                <!-- .et_pb_blurb -->
-                                            </div>
-                                            <!-- .et_pb_column -->
-
-                                        </div>
-                                        <!-- .et_pb_row -->
-
-                                    </div>
-                                    <!-- .et_pb_section -->
-                                    <div class="et_pb_section et_pb_section_2 et_section_regular section_has_divider et_pb_bottom_divider et_pb_top_divider">
-                                        <div class="et_pb_top_inside_divider et-no-transition"></div>
-
-                                        <div id="about_img_home" class="et_pb_row et_pb_row_3 about_img_home et_pb_row_fullwidth et_pb_equal_columns et_pb_gutters1">
-                                            <div class="et_pb_column et_pb_column_1_2 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough et_pb_column_empty">
-                                            </div>
-                                            <!-- .et_pb_column -->
-                                            <div class="et_pb_column et_pb_column_1_2 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
-
-                                                <div class="et_pb_module et_pb_blurb et_pb_blurb_3  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
-
-                                                    <div class="et_pb_blurb_content">
-                                                        <div class="et_pb_main_blurb_image">
-                                                            <span class="et_pb_image_wrap">
-                                                                <img loading="lazy" width="329" height="356" src="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/02/White.png" alt="" srcset="https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/02/White.png 329w, https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/uploads/2019/02/White-277x300.png 277w" sizes="(max-width: 329px) 100vw, 329px" class="et-waypoint et_pb_animation_top wp-image-387"/>
-                                                            </span>
-                                                        </div>
-                                                        <div class="et_pb_blurb_container">
-                                                        </div>
-                                                    </div>
-                                                    <!-- .et_pb_blurb_content -->
-                                                </div>
-                                                <!-- .et_pb_blurb -->
-                                                <div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
-
-                                                    <div class="et_pb_text_inner">About US</div>
-                                                </div>
-                                                <!-- .et_pb_text -->
-                                                <div class="et_pb_module et_pb_divider et_pb_divider_1 et_animated et_pb_divider_position_ et_pb_space">
-                                                    <div class="et_pb_divider_internal"></div>
-                                                </div>
-                                                <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_dark">
-
-                                                    <div class="et_pb_text_inner">
-                                                        <p>Corinthian Capital was founded in 2005 by experienced private equity professionals, each with decades of investing experience in the lower end of the middle market. At Corinthian Capital, we focus on investing businesses with sales between $50 million and $250 million. We take the time to understand each company and we tailor each company&#8217;s investment structure with careful regard to its growth needs and market position.</p>
-                                                        <p>&nbsp;</p>
-                                                    </div>
-                                                </div>
-                                                <!-- .et_pb_text -->
-                                                <div class="et_pb_button_module_wrapper et_pb_button_0_wrapper  et_pb_module ">
-                                                    <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="/about">Read More</a>
-                                                </div>
-                                            </div>
-                                            <!-- .et_pb_column -->
-
-                                        </div>
-                                        <!-- .et_pb_row -->
-
-                                    </div>
-                                    <!-- .et_pb_section -->
-                                </div>
-                                <!-- .et_builder_inner_content -->
-                            </div>
-                            <!-- .et-l -->
-
-                        </div>
-                        <!-- #et-boc -->
-                    </div>
-                    <!-- .entry-content -->
-
-                </article>
-                <!-- .et_pb_post -->
-
-            </div>
-            <!-- #main-content -->
-
-            <footer id="main-footer">
-
-                <div id="footer-bottom">
-                    <div class="container clearfix">
-                        <div id="footer-info">© 2008 - 2019 Corinthian Capital Group, LLC. All Rights Reserved.</div>
-                    </div>
-                    <!-- .container -->
-                </div>
-            </footer>
-            <!-- #main-footer -->
-        </div>
-        <!-- #et-main-area -->
-
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">CL Real Estate</a>
     </div>
-    <!-- #page-container -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <script type="text/javascript">
-    var et_animation_data = [{
-        "class": "et_pb_text_0",
-        "style": "slideTop",
-        "repeat": "once",
-        "duration": "1000ms",
-        "delay": "0ms",
-        "intensity": "20%",
-        "starting_opacity": "100%",
-        "speed_curve": "ease-in-out"
-    }, {
-        "class": "et_pb_divider_0",
-        "style": "slideTop",
-        "repeat": "once",
-        "duration": "1000ms",
-        "delay": "0ms",
-        "intensity": "20%",
-        "starting_opacity": "100%",
-        "speed_curve": "ease-in-out"
-    }, {
-        "class": "et_pb_blurb_0",
-        "style": "foldBottom",
-        "repeat": "once",
-        "duration": "1000ms",
-        "delay": "0ms",
-        "intensity": "20%",
-        "starting_opacity": "100%",
-        "speed_curve": "ease-in-out"
-    }, {
-        "class": "et_pb_blurb_1",
-        "style": "foldBottom",
-        "repeat": "once",
-        "duration": "1000ms",
-        "delay": "0ms",
-        "intensity": "20%",
-        "starting_opacity": "100%",
-        "speed_curve": "ease-in-out"
-    }, {
-        "class": "et_pb_blurb_2",
-        "style": "foldBottom",
-        "repeat": "once",
-        "duration": "1000ms",
-        "delay": "0ms",
-        "intensity": "20%",
-        "starting_opacity": "100%",
-        "speed_curve": "ease-in-out"
-    }, {
-        "class": "et_pb_text_1",
-        "style": "foldLeft",
-        "repeat": "once",
-        "duration": "1000ms",
-        "delay": "0ms",
-        "intensity": "20%",
-        "starting_opacity": "1000%",
-        "speed_curve": "ease-in-out"
-    }, {
-        "class": "et_pb_divider_1",
-        "style": "fade",
-        "repeat": "once",
-        "duration": "1000ms",
-        "delay": "0ms",
-        "intensity": "50%",
-        "starting_opacity": "0%",
-        "speed_curve": "ease-in-out"
-    }];
-    var et_link_options_data = [{
-        "class": "et_pb_blurb_0",
-        "url": "\/investment_criteria",
-        "target": "_self"
-    }, {
-        "class": "et_pb_blurb_1",
-        "url": "\/about",
-        "target": "_self"
-    }, {
-        "class": "et_pb_blurb_2",
-        "url": "\/portfolio",
-        "target": "_self"
-    }];
-    </script>
-    <script type='text/javascript' src='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/plugins/monarch/js/idle-timer.min.js?ver=1.4.14&#038;time=1620275929' id='et_monarch-idle-js'></script>
-    <script type='text/javascript' id='et_monarch-custom-js-js-extra'>
-    /* <![CDATA[ */
-    var monarchSettings = {
-        "ajaxurl": "https:\/\/www.corinthiancap.com\/wp-admin\/admin-ajax.php",
-        "pageurl": "https:\/\/www.corinthiancap.com\/",
-        "stats_nonce": "61f2911daa",
-        "share_counts": "51fb321920",
-        "follow_counts": "d225b1b57f",
-        "total_counts": "e0d7855055",
-        "media_single": "3d06f220ae",
-        "media_total": "fe3161f674",
-        "generate_all_window_nonce": "dd6443f555",
-        "no_img_message": "No images available for sharing on this page"
-    };
-    /* ]]> */
-    </script>
-    <script type='text/javascript' src='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/plugins/monarch/js/custom.js?ver=1.4.14&#038;time=1620275929' id='et_monarch-custom-js-js'></script>
-    <script type='text/javascript' id='divi-custom-script-js-extra'>
-    /* <![CDATA[ */
-    var DIVI = {
-        "item_count": "%d Item",
-        "items_count": "%d Items"
-    };
-    var et_shortcodes_strings = {
-        "previous": "Previous",
-        "next": "Next"
-    };
-    var et_pb_custom = {
-        "ajaxurl": "https:\/\/www.corinthiancap.com\/wp-admin\/admin-ajax.php",
-        "images_uri": "https:\/\/www.corinthiancap.com\/wp-content\/themes\/Divi\/images",
-        "builder_images_uri": "https:\/\/www.corinthiancap.com\/wp-content\/themes\/Divi\/includes\/builder\/images",
-        "et_frontend_nonce": "b777b2c00c",
-        "subscription_failed": "Please, check the fields below to make sure you entered the correct information.",
-        "et_ab_log_nonce": "85226f5842",
-        "fill_message": "Please, fill in the following fields:",
-        "contact_error_message": "Please, fix the following errors:",
-        "invalid": "Invalid email",
-        "captcha": "Captcha",
-        "prev": "Prev",
-        "previous": "Previous",
-        "next": "Next",
-        "wrong_captcha": "You entered the wrong number in captcha.",
-        "wrong_checkbox": "Checkbox",
-        "ignore_waypoints": "no",
-        "is_divi_theme_used": "1",
-        "widget_search_selector": ".widget_search",
-        "ab_tests": [],
-        "is_ab_testing_active": "",
-        "page_id": "32",
-        "unique_test_id": "",
-        "ab_bounce_rate": "5",
-        "is_cache_plugin_active": "yes",
-        "is_shortcode_tracking": "",
-        "tinymce_uri": ""
-    };
-    var et_builder_utils_params = {
-        "condition": {
-            "diviTheme": true,
-            "extraTheme": false
-        },
-        "scrollLocations": ["app", "top"],
-        "builderScrollLocations": {
-            "desktop": "app",
-            "tablet": "app",
-            "phone": "app"
-        },
-        "onloadScrollLocation": "app",
-        "builderType": "fe"
-    };
-    var et_frontend_scripts = {
-        "builderCssContainerPrefix": "#et-boc",
-        "builderCssLayoutPrefix": "#et-boc .et-l"
-    };
-    var et_pb_box_shadow_elements = [];
-    var et_pb_motion_elements = {
-        "desktop": [],
-        "tablet": [],
-        "phone": []
-    };
-    var et_pb_sticky_elements = [];
-    /* ]]> */
-    </script>
-    <script type='text/javascript' src='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/themes/Divi/js/custom.unified.js?ver=4.9.4&#038;time=1620275929' id='divi-custom-script-js'></script>
-    <script type='text/javascript' src='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.9.4&#038;time=1620275929' id='et-core-common-js'></script>
-    <script type='text/javascript' src='https://secureservercdn.net/166.62.108.196/xbn.224.myftpupload.com/wp-includes/js/wp-embed.min.js?ver=5.7.1&#038;time=1620275929' id='wp-embed-js'></script>
+<div class="jumbotron text-center">
+  <h1>Christopher and Company</h1>
+  <p>We specialize in luxury homes</p>
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>CL PRODUCTIONS</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
 </body>
 </html>
-
